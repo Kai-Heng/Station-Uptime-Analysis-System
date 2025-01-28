@@ -1,0 +1,3 @@
+[Charger Availability Reports]
+1001 0 100000 true
+

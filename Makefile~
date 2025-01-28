@@ -1,0 +1,23 @@
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+
+# Target executable name
+TARGET = calculation
+
+# Source files
+SRC = calculation.cpp
+
+# Build the target
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Clean up build artifacts
+clean:
+	rm -f $(TARGET)
+
+# Phony targets
+.PHONY: all clean
+
